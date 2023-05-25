@@ -1,0 +1,129 @@
+body {
+    background-color: #0a142e;
+    font-family: 'Inter', sans-serif;
+    color: #8296BD;
+    font-weight: 200;
+    padding: 5% 20%;
+}
+
+@media (max-width:1600px) {
+    body {
+        padding: 5% 13%;
+    }
+};
+
+#menu {
+    font-weight: bold;
+}
+
+#menu > h1 > a {
+    font-size: 3vw;
+    text-decoration: none;
+    color: white;
+}
+
+#menu > h2 {
+    color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+.sans_decoration {
+    text-decoration: none;
+    color: #8296BD;
+}
+
+main {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#all {
+    display: flex;
+    gap: 15%;
+    flex-direction: row-reverse;
+}
+
+#presentation {
+    margin-bottom: 25%;
+}
+
+.experience_card {
+    display: flex;
+    gap: 3%;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.experience_card:hover {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: radial-gradient(circle at center, #1e2f56, #0a142e);
+}
+
+.time {
+    width: 200px;
+}
+
+#nav_menu {
+    margin-top: 20%;
+}
+
+.content {
+    width: 100%;
+}
+
+.content > h3 {
+    margin: 0;
+    color: white;
+}
+
+.a_menu {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 175px;
+}
+
+.line {
+    border-top: 1px solid #8296BD; 
+    width: 40px;
+    transition: width 0.2s ease-in-out;
+}
+
+a:hover .line {
+    width: 75px;
+    border-top: 2px solid white; 
+}
+
+a:hover {
+    color: white;
+}
+
+#image {
+    width: 300px; /* Définir la largeur */
+    height: 300px; /* Définir la hauteur */
+    border-radius: 50%; /* Appliquer un rayon de bordure de 50% pour créer un cercle */
+    background-color: white;
+    overflow: hidden;
+}
+
+#all {
+    min-height: 100vh;
+}
+
+header {
+    left: 14%;
+    width: 30%;
+    position: fixed;
+}
+
+#image img {
+    width: 100%; /* Ajuster la taille de l'image pour remplir le cercle */
+    height: auto;
+    object-fit: cover; /* Redimensionner et recadrer l'image pour remplir le cercle */
+}
