@@ -1,129 +1,258 @@
 body {
-    background-color: #0a142e;
-    font-family: 'Inter', sans-serif;
-    color: #8296BD;
-    font-weight: 200;
-    padding: 5% 20%;
+	background-color: #0a142e;
+	font-family: 'Inter', sans-serif;
+	color: #93A2B7;
+	padding: 5% 20%;
+	overflow-x: hidden;
 }
 
 @media (max-width:1600px) {
-    body {
-        padding: 5% 13%;
-    }
+	body {
+		padding: 5% 13%;
+	}
 };
 
+#logo > a {
+	text-decoration: none;
+}
+
+#logo {
+	display: flex;
+	gap: 15px;
+}
+
 #menu {
-    font-weight: bold;
+	font-weight: bold;
+	width: 90%;
 }
 
 #menu > h1 > a {
-    font-size: 3vw;
-    text-decoration: none;
-    color: white;
+	font-size: 3vw;
+	text-decoration: none;
+	color: white;
 }
 
 #menu > h2 {
-    color: white;
+	color: white;
 }
 
 p {
-    text-align: justify;
+	text-align: justify;
 }
 
 .sans_decoration {
-    text-decoration: none;
-    color: #8296BD;
+	text-decoration: none;
+	color: #8296BD;
 }
 
 main {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
 }
 
 #all {
-    display: flex;
-    gap: 15%;
-    flex-direction: row-reverse;
+	display: flex;
+	gap: 15%;
+	flex-direction: row-reverse;
 }
 
 #presentation {
-    margin-bottom: 25%;
+	margin-bottom: 10%;
 }
 
-.experience_card {
-    display: flex;
-    gap: 3%;
-    padding: 20px;
-    transition: background-color 0.3s ease;
+#experience {
+	row-gap: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
-.experience_card:hover {
-    border: 2px solid transparent;
-    border-radius: 10px;
-    background: radial-gradient(circle at center, #1e2f56, #0a142e);
+.card {
+	display: flex;
+	gap: 3%;
+	padding: 20px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #93A2B7;
 }
 
-.time {
-    width: 200px;
+.card:hover {
+	border: 2px solid #162344;
+	border-radius: 5px;
+	background-color: #202a4473;
+}
+
+.card:hover h3 {
+	color: #51CACE;
+}
+
+.card:hover .fleche_top {
+	filter: sepia(900%) hue-rotate(140deg) saturate(1050%)
+}
+
+.left_card {
+	width: 30%;
+	margin: 0;
+	text-align: initial;
 }
 
 #nav_menu {
-    margin-top: 20%;
+	margin-top: 20%;
 }
 
-.content {
-    width: 100%;
+#nav_menu > a {
+	transition: color 0.3s ease-in-out;
 }
 
-.content > h3 {
-    margin: 0;
-    color: white;
+.content_card {
+	width: 100%;
+}
+
+.content_card > h3 {
+	margin: 0;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 .a_menu {
-    display: flex;
-    align-items: center;
-    gap: 5%;
-    width: 175px;
+	display: flex;
+	align-items: center;
+	gap: 5%;
+	width: 175px;
 }
 
 .line {
-    border-top: 1px solid #8296BD; 
-    width: 40px;
-    transition: width 0.2s ease-in-out;
+	border-top: 1px solid #8296BD; 
+	width: 40px;
+	transition: width 0.2s ease-in-out;
+}
+
+.hover_blanc:hover {
+	filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(0deg);
 }
 
 a:hover .line {
-    width: 75px;
-    border-top: 2px solid white; 
+	width: 75px;
+	border-top: 2px solid white; 
 }
 
-a:hover {
-    color: white;
+.a_menu:hover {
+	color: white;
 }
 
-#image {
-    width: 300px; /* Définir la largeur */
-    height: 300px; /* Définir la hauteur */
-    border-radius: 50%; /* Appliquer un rayon de bordure de 50% pour créer un cercle */
-    background-color: white;
-    overflow: hidden;
+#avatar {
+	width: 260px; /* Définir la largeur */
+	height: 260px; /* Définir la hauteur */
+	border-radius: 50%; /* Appliquer un rayon de bordure de 50% pour créer un cercle */
+	background-color: white;
+	overflow: hidden;
 }
 
 #all {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
 header {
-    left: 14%;
-    width: 30%;
-    position: fixed;
+	left: 14%;
+	width: 30%;
+	height: 80%;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
-#image img {
-    width: 100%; /* Ajuster la taille de l'image pour remplir le cercle */
-    height: auto;
-    object-fit: cover; /* Redimensionner et recadrer l'image pour remplir le cercle */
+#avatar img {
+	width: 100%; /* Ajuster la taille de l'image pour remplir le cercle */
+	height: auto;
+	object-fit: cover; /* Redimensionner et recadrer l'image pour remplir le cercle */
+}
+
+#cv {
+	align-self: flex-start;
+	text-decoration: none;
+	color: white;
+	margin-left: 4%;
+	display: flex;
+	gap: 10px;
+}
+
+
+#arrow_right {
+	width: 20px;
+	transition: transform 0.3s;
+}
+
+#cv:hover #arrow_right {
+	transform: translateX(10px);
+}
+
+#cv_texte {
+	position: relative;
+	overflow: hidden;
+	font-weight: bold;
+}
+
+#cv_texte::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #51CACE;
+	transition: width 0.3s ease-in-out;
+}
+
+#cv:hover #cv_texte::before {
+	width: 100%;
+}
+
+.technologie {
+	display: flex;
+	background-color: #183656;
+	color: #5EE9D3;
+	padding: 2%;
+	border-radius: 15px;
+	width: fit-content;
+	margin: 0;
+}
+
+.container_technologies {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.container_technologies > p {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.texte_normal {
+	font-size: 14px;
+}
+
+.fleche_top {
+	width: 15px;
+	transform: scaleX(-1);
+}
+
+.card:hover .fleche_top {
+	transform: translate(5px, -5px) scaleX(-1);
+	transition: transform 0.3s ease-in-out;
+}
+
+
+.to_slide {
+	transform: translateX(100%);
+  	transition: transform 0.8s;
+}
+
+.to_slide.slide-in {
+	transform: translateX(0);
 }

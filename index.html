@@ -7,11 +7,10 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 	<title>Reply</title>
 </head>
 <body>
-	<div class="lamp-cursor"></div>
 	<div id="all">
 		<header>
 			<div id="menu">
@@ -26,7 +25,7 @@
 				<nav id="nav_menu">
 					<ul style="padding: 0;">
 						<li style="list-style: none;">
-							<a href="#about" class="sans_decoration a_menu"><p class="line"></p>A PROPOS</a>
+							<a href="#avatar" class="sans_decoration a_menu"><p class="line"></p>A PROPOS</a>
 						</li>
 					</ul>
 					<ul style="padding: 0;">
@@ -42,46 +41,193 @@
 				</nav>
 			</div>
 			<div id="logo">
-
+				<a href="https://github.com/Joris07" style="text-decoration: none;" class="hover_blanc" target="_blank">
+					<img src="icons/github.svg" alt="Github">
+				</a>
+				<a href="https://www.linkedin.com/in/joris-gourdon-0aa2b3200/" class="hover_blanc" target="_blank">
+					<img src="icons/linkedin.svg" alt="Linkedin">
+				</a>
 			</div>
 		</header>
 		<main>
-			<div id="image">
-				<img src="avatar.svg" alt="Avatar Joris">
+			<div id="avatar" class="observer">
+				<img src="icons/avatar.svg" alt="Avatar Joris">
 			</div>
 			<div id="presentation">
 				<p>Encore un test de Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vitae! Neque omnis accusamus minus accusantium ipsam delectus pariatur, atque maxime consequuntur harum quibusdam aliquid error similique. Doloremque laborum mollitia quae?</p>
 				<p>Encore un test de Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vitae! Neque omnis accusamus minus accusantium ipsam delectus pariatur, atque maxime consequuntur harum quibusdam aliquid error similique. Doloremque laborum mollitia quae?</p>
 				<p>Encore un test de Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, vitae! Neque omnis accusamus minus accusantium ipsam delectus pariatur, atque maxime consequuntur harum quibusdam aliquid error similique. Doloremque laborum mollitia quae?</p>
 			</div>
-			<div id="experience">
-				<div class="experience_card">
-					<header class="time">
-						2022 - PRESENT
-					</header>
-					<div class="content">
-						<h3>Développeur back-end - Edissio <a href="edissio.fr"></a></h3>
-						<p>
+			<div id="experience" class="observer">
+				<a class="card to_slide" href="edissio.fr">
+					<p class="left_card texte_normal">
+						2022 à aujourd'hui
+					</p>
+					<div class="content_card">
+						<h3>Développeur back-end - Edissio <img src="icons/arrow_top.png" alt="Flèche" class="fleche_top"></h3>
+						<p class="texte_normal">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa, sint repellat doloribus quae, inventore accusamus ullam dicta laboriosam eligendi eum corrupti nisi incidunt nam consectetur accusantium vitae sapiente mollitia?
+						</p>
+						<div class="container_technologies">
+							<p class="technologie">PHP</p>
+							<p class="technologie">WordPress</p>
+							<p class="technologie">HTML</p>
+							<p class="technologie">CSS</p>
+							<p class="technologie">JavaScript</p>
+							<p class="technologie">SQL</p>
+						</div>
+					</div>
+				</a>
+				<a class="card to_slide" href="lgc.fr">
+					<p class="left_card texte_normal">
+						Mars à Juin 2021
+					</p>
+					<div class="content_card">
+						<h3>Stage Développeur C# - LGC <img src="icons/arrow_top.png" alt="Flèche" class="fleche_top"></h3>
+						<p class="texte_normal">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa, sint repellat doloribus quae, inventore accusamus ullam dicta laboriosam eligendi eum corrupti nisi incidunt nam consectetur accusantium vitae sapiente mollitia?
+						</p>
+						<div class="container_technologies">
+							<p class="technologie">C#</p>
+							<p class="technologie">WPF</p>
+							<p class="technologie">VBA</p>
+							<p class="technologie">SQL</p>
+						</div>
+					</div>
+				</a>
+
+
+
+				<a class="card to_slide" href="lgc.fr">
+					<p class="left_card texte_normal">
+						Mars à Juin 2021
+					</p>
+					<div class="content_card">
+						<h3>Stage Développeur C# - LGC <img src="icons/arrow_top.png" alt="Flèche" class="fleche_top"></h3>
+						<p class="texte_normal">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa, sint repellat doloribus quae, inventore accusamus ullam dicta laboriosam eligendi eum corrupti nisi incidunt nam consectetur accusantium vitae sapiente mollitia?
+						</p>
+						<div class="container_technologies">
+							<p class="technologie">C#</p>
+							<p class="technologie">WPF</p>
+							<p class="technologie">VBA</p>
+							<p class="technologie">SQL</p>
+						</div>
+					</div>
+				</a>
+
+				<a class="card to_slide" href="lgc.fr">
+					<p class="left_card texte_normal">
+						Mars à Juin 2021
+					</p>
+					<div class="content_card">
+						<h3>Stage Développeur C# - LGC <img src="icons/arrow_top.png" alt="Flèche" class="fleche_top"></h3>
+						<p class="texte_normal">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa, sint repellat doloribus quae, inventore accusamus ullam dicta laboriosam eligendi eum corrupti nisi incidunt nam consectetur accusantium vitae sapiente mollitia?
+						</p>
+						<div class="container_technologies">
+							<p class="technologie">C#</p>
+							<p class="technologie">WPF</p>
+							<p class="technologie">VBA</p>
+							<p class="technologie">SQL</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<a id="cv" href="" target="_blank">
+				<span id="cv_texte">Voir mon CV</span>
+				<img src="icons/arrow_right.png" alt="Flèche droite" id="arrow_right">
+			</a>
+			<div id="projets" class="observer">
+				<a class="card to_slide" href="">
+					<img class="left_card">
+					<div class="content_card">
+						<h3>Projet extension anti-phobique <img src="icons/arrow_top.png" alt="Flèche" class="fleche_top"></h3>
+						<p class="texte_normal">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa, sint repellat doloribus quae, inventore accusamus ullam dicta laboriosam eligendi eum corrupti nisi incidunt nam consectetur accusantium vitae sapiente mollitia?
 						</p>
 					</div>
-				</div>
-			</div>
-			<div class="experience_card">
-				<header class="time">
-					Mars à Juin 2021
-				</header>
-				<div class="content">
-					<h3>Stage Développeur C# - LGC <a href="lgc.fr"></a></h3>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa, sint repellat doloribus quae, inventore accusamus ullam dicta laboriosam eligendi eum corrupti nisi incidunt nam consectetur accusantium vitae sapiente mollitia?
-					</p>
-				</div>
-			</div>
-			<div class="projets">
-
+				</a>
 			</div>
 		</main>
 	</div>
 </body>
 </html>
+
+<script>
+	// Sélectionnez les liens de la navbar
+const links = document.querySelectorAll('#nav_menu a');
+
+// Créez une instance de l'observateur d'intersection
+const observer = new IntersectionObserver(entries => {
+  	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			let targetId = entry.target.getAttribute('id');
+			let link = document.querySelector(`#nav_menu a[href="#${targetId}"]`);
+			if (link) {
+				// Mettez le texte en blanc
+				link.childNodes[0].style.width = "70px";
+				link.childNodes[0].style.borderTop = "2px solid white";
+				link.style.color = "white";
+				// On modifie tous les autres non-focus
+				document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
+					if (element.href != link.href) {
+						element.childNodes[0].style.width = "";
+						element.childNodes[0].style.borderTop = "";
+						element.style.color = "";
+					}
+				});
+			}
+		}
+  	});
+});
+
+// Sélectionnez les éléments de la page à observer
+const sections = document.querySelectorAll('.observer');
+
+// Ajoutez chaque section à l'observateur d'intersection
+sections.forEach(section => {
+	observer.observe(section);
+});
+
+document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
+	element.addEventListener("click", function (param) {
+		param.target.style.color = "white";
+		param.target.childNodes[0].style.width = "70px";
+		param.target.childNodes[0].style.borderTop = "2px solid white";
+
+		document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
+			if (element.href != param.target.href) {
+				element.childNodes[0].style.width = "";
+				element.childNodes[0].style.borderTop = "";
+				element.style.color = "";
+			}
+		});
+	});
+});
+
+
+function slideInOnScroll() {
+  let elementToShow = document.querySelectorAll(".to_slide");
+
+  function checkScroll() {
+	elementToShow.forEach(function(elem) {
+		let windowHeight = window.innerHeight;
+		let divTop = elem.getBoundingClientRect().top;
+
+		if (divTop < windowHeight && divTop > 0) {
+			elem.classList.add('slide-in');
+		}
+	});
+  }
+
+  window.addEventListener('scroll', checkScroll);
+}
+
+slideInOnScroll();
+
+window.onbeforeunload = function() {
+  window.scrollTo(0, 0);
+};
+
+</script>
