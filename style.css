@@ -263,10 +263,9 @@ header {
 	transition: transform 0.3s ease-in-out;
 }
 
-
 .to_slide {
-	transform: translateX(100%);
-  	transition: transform 0.8s;
+	transform: translateX(200%);
+  	transition: transform 1.25s;
 }
 
 .to_slide.slide-in {
@@ -275,6 +274,17 @@ header {
 
 .show_after {
 	display: none;
+}
+
+img.left_card {
+	height: fit-content;
+    align-self: center;
+	width: 170px;
+}
+
+#cyclo_img {
+	height: 70px;
+	align-self: center;
 }
 
 @media (max-width: 770px) {
@@ -323,5 +333,9 @@ header {
 		align-self: self-start;
 		color: white;
 		font-size: .875rem;
+	}
+
+	.left_card {
+		align-self: center;
 	}
 }
