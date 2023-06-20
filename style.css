@@ -2,15 +2,18 @@ body {
 	background-color: #0a142e;
 	font-family: 'Inter', sans-serif;
 	color: #93A2B7;
-	padding: 5% 20%;
+	padding: 5% 15%;
+	overflow-x: hidden;
+	position: relative;
+}
+
+html {
 	overflow-x: hidden;
 }
 
-@media (max-width:1600px) {
-	body {
-		padding: 5% 13%;
-	}
-};
+p {
+	text-align: justify;
+}
 
 #logo > a {
 	text-decoration: none;
@@ -27,17 +30,14 @@ body {
 }
 
 #menu > h1 > a {
-	font-size: 3vw;
 	text-decoration: none;
 	color: white;
+	font-size: 2.25rem;
 }
 
 #menu > h2 {
 	color: white;
-}
-
-p {
-	text-align: justify;
+	font-size: 1.125rem;
 }
 
 .sans_decoration {
@@ -51,6 +51,18 @@ main {
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
+}
+
+#nav_menu ul {
+	padding: 0;
+}
+
+#nav_menu li {
+	list-style: none;
+}
+
+#logo a {
+	text-decoration: none;
 }
 
 #all {
@@ -93,7 +105,7 @@ main {
 }
 
 .left_card {
-	width: 30%;
+	width: 35%;
 	margin: 0;
 	text-align: initial;
 }
@@ -145,8 +157,8 @@ a:hover .line {
 }
 
 #avatar {
-	width: 260px; /* Définir la largeur */
-	height: 260px; /* Définir la hauteur */
+	width: 225px; /* Définir la largeur */
+	height: 225px; /* Définir la hauteur */
 	border-radius: 50%; /* Appliquer un rayon de bordure de 50% pour créer un cercle */
 	background-color: white;
 	overflow: hidden;
@@ -157,8 +169,8 @@ a:hover .line {
 }
 
 header {
-	left: 14%;
-	width: 30%;
+	left: 16%;
+	width: 25%;
 	height: 80%;
 	position: fixed;
 	display: flex;
@@ -234,7 +246,11 @@ header {
 }
 
 .texte_normal {
-	font-size: 14px;
+	font-size: 1rem;
+}
+
+.texte_petit {
+	font-size: 0.9rem;
 }
 
 .fleche_top {
@@ -255,4 +271,57 @@ header {
 
 .to_slide.slide-in {
 	transform: translateX(0);
+}
+
+.show_after {
+	display: none;
+}
+
+@media (max-width: 770px) {
+	header {
+		position: relative;
+		width: auto;
+		left: auto;
+	}
+
+	#all {
+		display: flex;
+    	flex-direction: column;
+	}
+
+	main {
+		width: auto;
+	}
+
+	#nav_menu {
+		display: none;
+	}
+
+	#menu {
+		width: 100%;
+	}
+
+	.left_card {
+		width: 70%;
+	}
+
+	#projets > .card {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	#experience > .card {
+		display: block;
+	}
+
+	body {
+		padding: 5% 5%;
+	}
+
+	.show_after {
+		display: block;
+		align-self: self-start;
+		color: white;
+		font-size: .875rem;
+	}
 }
