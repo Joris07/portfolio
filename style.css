@@ -1,7 +1,16 @@
+:root {
+	--main-bg-color: rgb(15 23 42);
+	--main-font-color: #93A2B7;
+	--sans-decoration: #8296BD;
+	--color-blanc: white;
+	--color-turquoise: #51CACE;
+}
+
+
 body {
-	background-color: #0a142e;
-	font-family: 'Inter', sans-serif;
-	color: #93A2B7;
+	background-color: var(--main-bg-color);
+	font-family: 'Inter',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	color: var(--main-font-color);
 	padding: 5% 15%;
 	overflow-x: hidden;
 	position: relative;
@@ -31,18 +40,18 @@ p {
 
 #menu > h1 > a {
 	text-decoration: none;
-	color: white;
+	color: var(--color-blanc);
 	font-size: 2.25rem;
 }
 
 #menu > h2 {
-	color: white;
+	color: var(--color-blanc);
 	font-size: 1.125rem;
 }
 
 .sans_decoration {
 	text-decoration: none;
-	color: #8296BD;
+	color: var(--sans-decoration);
 }
 
 main {
@@ -87,7 +96,8 @@ main {
 	padding: 20px;
 	cursor: pointer;
 	text-decoration: none;
-	color: #93A2B7;
+	color: var(--main-font-color);
+	border: 2px solid transparent; /* Ajoutez une bordure transparente par défaut */
 }
 
 .card:hover {
@@ -97,11 +107,7 @@ main {
 }
 
 .card:hover h3 {
-	color: #51CACE;
-}
-
-.card:hover .fleche_top {
-	filter: sepia(900%) hue-rotate(140deg) saturate(1050%)
+	color: var(--color-turquoise);
 }
 
 .left_card {
@@ -124,7 +130,7 @@ main {
 
 .content_card > h3 {
 	margin: 0;
-	color: white;
+	color: var(--color-blanc);
 	font-size: 20px;
 	text-decoration: none;
 	font-weight: bold;
@@ -138,7 +144,7 @@ main {
 }
 
 .line {
-	border-top: 1px solid #8296BD; 
+	border-top: 1px solid var(--sans-decoration); 
 	width: 40px;
 	transition: width 0.2s ease-in-out;
 }
@@ -149,18 +155,18 @@ main {
 
 a:hover .line {
 	width: 75px;
-	border-top: 2px solid white; 
+	border-top: 2px solid var(--color-blanc); 
 }
 
 .a_menu:hover {
-	color: white;
+	color: var(--color-blanc);
 }
 
 #avatar {
-	width: 225px; /* Définir la largeur */
-	height: 225px; /* Définir la hauteur */
-	border-radius: 50%; /* Appliquer un rayon de bordure de 50% pour créer un cercle */
-	background-color: white;
+	width: 225px;
+	height: 225px;
+	border-radius: 50%;
+	background-color: var(--color-blanc);
 	overflow: hidden;
 }
 
@@ -187,7 +193,7 @@ header {
 #cv {
 	align-self: flex-start;
 	text-decoration: none;
-	color: white;
+	color: var(--color-blanc);
 	margin-left: 4%;
 	display: flex;
 	gap: 10px;
@@ -216,7 +222,7 @@ header {
 	left: 0;
 	width: 0;
 	height: 2px;
-	background-color: #51CACE;
+	background-color: var(--color-turquoise);
 	transition: width 0.3s ease-in-out;
 }
 
@@ -226,9 +232,9 @@ header {
 
 .technologie {
 	display: flex;
-	background-color: #183656;
+	background-color: #172d46;
 	color: #5EE9D3;
-	padding: 2%;
+	padding: 10px;
 	border-radius: 15px;
 	width: fit-content;
 	margin: 0;
@@ -249,23 +255,24 @@ header {
 	font-size: 1rem;
 }
 
-.texte_petit {
-	font-size: 0.9rem;
-}
-
 .fleche_top {
 	width: 15px;
 	transform: scaleX(-1);
 }
 
+.card .fleche_top {
+	transform: translate(0, 0) scaleX(-1);
+	transition: transform 0.3s ease-in-out;
+}
+
 .card:hover .fleche_top {
 	transform: translate(5px, -5px) scaleX(-1);
-	transition: transform 0.3s ease-in-out;
+	filter: sepia(900%) hue-rotate(140deg) saturate(1050%)
 }
 
 .to_slide {
 	transform: translateX(200%);
-  	transition: transform 1.25s;
+  	transition: transform 1.25s, border 0.5s ease, border-radius 0.5s ease, background-color 0.5s ease;
 }
 
 .to_slide.slide-in {
@@ -278,7 +285,7 @@ header {
 
 img.left_card {
 	height: fit-content;
-    align-self: center;
+	align-self: center;
 	width: 170px;
 }
 
@@ -287,7 +294,7 @@ img.left_card {
 	align-self: center;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1100px) {
 	header {
 		position: relative;
 		width: auto;
@@ -296,7 +303,7 @@ img.left_card {
 
 	#all {
 		display: flex;
-    	flex-direction: column;
+		flex-direction: column;
 	}
 
 	main {
@@ -315,6 +322,12 @@ img.left_card {
 		width: 70%;
 	}
 
+	#projets {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+	}
+
 	#projets > .card {
 		display: flex;
 		flex-direction: column-reverse;
@@ -331,7 +344,7 @@ img.left_card {
 	.show_after {
 		display: block;
 		align-self: self-start;
-		color: white;
+		color: var(--color-blanc);
 		font-size: .875rem;
 	}
 
