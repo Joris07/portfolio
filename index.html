@@ -160,8 +160,8 @@ const observer = new IntersectionObserver(entries => {
 			if (link) {
 				// Mettez le texte en blanc
 				link.childNodes[0].style.width = "70px";
-				link.childNodes[0].style.borderTop = "2px solid var(--color-turquoise)";
-				link.style.color = "var(--color-turquoise)";
+				link.childNodes[0].style.borderTop = "2px solid var(--color-bleu)";
+				link.style.color = "var(--color-bleu)";
 				// On modifie tous les autres non-focus
 				document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
 					if (element.href != link.href) {
@@ -186,9 +186,9 @@ sections.forEach(section => {
 
 document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
 	element.addEventListener("click", function (param) {
-		param.target.style.color = "var(--color-turquoise)";
+		param.target.style.color = "var(--color-bleu)";
 		param.target.childNodes[0].style.width = "70px";
-		param.target.childNodes[0].style.borderTop = "2px solid var(--color-turquoise)";
+		param.target.childNodes[0].style.borderTop = "2px solid var(--color-bleu)";
 
 		document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
 			if (element.href != param.target.href) {
@@ -221,7 +221,40 @@ function slideInOnScroll() {
 slideInOnScroll();
 
 window.onbeforeunload = function() {
-  window.scrollTo(0, 0);
+  	window.scrollTo(0, 0);
 };
+
+document.querySelectorAll(".checkbox").forEach((input) => {
+	/*
+	--main-bg-color: rgb(15 23 42);
+	--main-font-color: #93A2B7;
+	--sans-decoration: #8296BD;
+	--color-blanc: white;
+	--color-bleu: #007bff;
+	*/
+	input.addEventListener('change', (item) => {
+		const root_theme = document.querySelector(':root');
+		
+		// Light
+		if (item.target.checked) {
+			root_theme.style.setProperty('--main-bg-color', 'white');
+			root_theme.style.setProperty('--main-font-color', 'rgb(15 23 42)');
+			root_theme.style.setProperty('--sans-decoration', '#8296BD');
+			root_theme.style.setProperty('--color-blanc', 'rgb(15 23 42)');
+			root_theme.style.setProperty('--filter-icons', 'brightness(0) saturate(100%) invert(7%) sepia(8%) saturate(4950%) hue-rotate(185deg) brightness(96%) contrast(96%)');
+			// root_theme.style.setProperty('--filter-bleu', 'brightness(0) saturate(100%) invert(6%) sepia(65%) saturate(850%) hue-rotate(188deg) brightness(96%) contrast(95%)');
+		}
+		else {
+			root_theme.style.setProperty('--main-bg-color', 'rgb(15 23 42)');
+			root_theme.style.setProperty('--main-font-color', '#93A2B7');
+			root_theme.style.setProperty('--sans-decoration', '#8296BD');
+			root_theme.style.setProperty('--color-blanc', 'white');
+			root_theme.style.setProperty('--filter-icons', 'brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(0deg)');
+			// root_theme.style.setProperty('--filter-bleu', 'invert(60%) sepia(91%) saturate(6659%) hue-rotate(200deg) brightness(103%) contrast(105%)');
+		}
+		document.getElementById("chk").checked = item.target.checked;
+		document.getElementById("chk-avatar").checked = item.target.checked;
+	});
+})
 
 </script>

@@ -1,9 +1,10 @@
 :root {
-	--main-bg-color: rgb(15 23 42);
+	--main-bg-color: #0f1729;
 	--main-font-color: #93A2B7;
 	--sans-decoration: #8296BD;
 	--color-blanc: white;
-	--color-turquoise: #007bff;
+	--color-bleu: #007bff;
+	--filter-icons: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(0deg);
 }
 
 body {
@@ -112,7 +113,7 @@ main {
 }
 
 .card:hover h3 {
-	color: var(--color-turquoise);
+	color: var(--color-bleu);
 }
 
 .left_card {
@@ -155,16 +156,16 @@ main {
 }
 
 .hover_blanc:hover {
-	filter: brightness(0) saturate(100%) invert(100%) sepia(100%) hue-rotate(0deg);
+	filter: var(--filter-icons);
 }
 
 a:hover .line {
 	width: 75px;
-	border-top: 2px solid var(--color-turquoise); 
+	border-top: 2px solid var(--color-bleu); 
 }
 
 .a_menu:hover {
-	color: var(--color-turquoise);
+	color: var(--color-bleu);
 }
 
 #avatar {
@@ -227,7 +228,7 @@ header {
 	left: 0;
 	width: 0;
 	height: 2px;
-	background-color: var(--color-turquoise);
+	background-color: var(--color-bleu);
 	transition: width 0.3s ease-in-out;
 }
 
@@ -237,10 +238,10 @@ header {
 
 .technologie {
 	display: flex;
-	color: var(--color-turquoise);
+	color: var(--color-bleu);
 	padding: 10px;
 	border-radius: 15px;
-	border: solid 1px var(--color-turquoise);;
+	border: solid 1px var(--color-bleu);;
 	width: fit-content;
 	margin: 0;
 }
@@ -268,6 +269,7 @@ header {
 .card .fleche_top {
 	transform: translate(0, 0) scaleX(-1);
 	transition: transform 0.3s ease-in-out;
+	filter: var(--filter-icons);
 }
 
 .card:hover .fleche_top {
@@ -305,7 +307,7 @@ img.left_card {
 }
 
 .label {
-	background-color: white;
+	background-color: var(--color-blanc);
 	border-radius: 50px;
 	cursor: pointer;
 	display: flex;
@@ -334,7 +336,6 @@ img.left_card {
 }
 
 .fa-moon {
-	color: #f1c40f;
 	width: 20px;
 	position: absolute;
 	top: 10%;
@@ -342,7 +343,6 @@ img.left_card {
 }
 
 .fa-sun {
-	color: #f39c12;
 	width: 20px;
 	position: absolute;
 	top: 10%;
@@ -418,7 +418,7 @@ img.left_card {
 	.show_after {
 		display: block;
 		align-self: self-start;
-		color: var(--color-turquoise);
+		color: var(--color-bleu);
 		font-size: .875rem;
 	}
 
