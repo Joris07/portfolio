@@ -15,9 +15,20 @@
 	<div id="all">
 		<header>
 			<div id="menu">
-				<h1>
-					<a href="/" class="sans_decoration">Joris Gourdon</a>
-				</h1>
+				<div>
+					<h1>
+						<a href="/" class="sans_decoration">Joris Gourdon</a>
+					</h1>
+					<div id="switch-dark-light">
+						<input type="checkbox" class="checkbox" id="chk" />
+						<label class="label" for="chk">
+							<img src="icons/soleil.png" alt="" class="fas fa-sun">
+							<img src="icons/lune.png" alt="" class="fas fa-moon">
+							<div class="ball"></div>
+						</label>
+					</div>
+				</div>
+				
 				<h2>Développeur full-stack pour Edissio</h2>
 				<p>
 					Construire des solutions web innovantes, du front-end au back-end, pour façonner l'avenir numérique avec passion et expertise.
@@ -50,6 +61,14 @@
 			</div>
 		</header>
 		<main>
+			<div id="switch-dark-light-avatar">
+				<input type="checkbox" class="checkbox" id="chk-avatar" />
+				<label class="label" for="chk-avatar">
+					<img src="icons/soleil.png" alt="" class="fas fa-sun">
+					<img src="icons/lune.png" alt="" class="fas fa-moon">
+					<div class="ball"></div>
+				</label>
+			</div>
 			<div id="avatar" class="observer">
 				<img src="icons/avatar.svg" alt="Avatar Joris">
 			</div>
@@ -141,8 +160,8 @@ const observer = new IntersectionObserver(entries => {
 			if (link) {
 				// Mettez le texte en blanc
 				link.childNodes[0].style.width = "70px";
-				link.childNodes[0].style.borderTop = "2px solid white";
-				link.style.color = "white";
+				link.childNodes[0].style.borderTop = "2px solid var(--color-turquoise)";
+				link.style.color = "var(--color-turquoise)";
 				// On modifie tous les autres non-focus
 				document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
 					if (element.href != link.href) {
@@ -167,9 +186,9 @@ sections.forEach(section => {
 
 document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
 	element.addEventListener("click", function (param) {
-		param.target.style.color = "white";
+		param.target.style.color = "var(--color-turquoise)";
 		param.target.childNodes[0].style.width = "70px";
-		param.target.childNodes[0].style.borderTop = "2px solid white";
+		param.target.childNodes[0].style.borderTop = "2px solid var(--color-turquoise)";
 
 		document.querySelectorAll(`#nav_menu a`).forEach(function(element) {
 			if (element.href != param.target.href) {
