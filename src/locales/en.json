@@ -1,0 +1,51 @@
+{
+	"header": {
+		"moi": "Joris Gourdon",
+		"poste" : "Full-stack Developer for Edissio",
+		"devise" : "Building innovative web solutions, from front-end to back-end, to shape the digital future with passion and expertise.",
+		"propos": {
+			"partie1" : "My passion for programming began in high school, where I discovered this creative and logical discipline. Since then, I have pursued my studies with a DUT in GEII, a professional license specialized in web development, and finally an MBA in full-stack development. This comprehensive training has allowed me to acquire complete expertise in this field, while developing strong project management skills.",
+			"partie2" : "I have gained solid expertise in technologies such as PHP, JavaScript, and I am constantly seeking new knowledge to stay up to date in a constantly evolving field. I am a staunch advocate of the user-centered approach, seeking to understand the needs and desires of each user to create personalized digital experiences.",
+			"partie3" : "When I'm not immersed in programming, I enjoy playing tennis, spending time with friends, or watching movies."
+		},
+		"menu": {
+			"about": "About",
+			"experience": "Experience",
+			"projets": "Projects"
+		}
+	},
+	"main" : {
+		"cv" : "View my CV",
+		"repo" : "View all projects",
+		"experiences" : {
+			"edissio" : {
+				"date" : "2022 to present",
+				"title" : "Web Developer Intern - Edissio",
+				"description" : "Creation and update of internal web tools for the company."
+			},
+			"lgc" : {
+				"date" : "March to June 2021",
+				"title" : "C# Developer Intern - LGC",
+				"description" : "Development of a real-time listening program for ADAM-6051 modules, linked to production automation, to retrieve associated data. Then development of a heavy software aimed at displaying and analyzing the retrieved data."
+			}
+		},
+		"projets" : {
+			"tcbc" : {
+				"title" : "TCBC Website",
+				"description" : "Creation of the showcase website for the TCBC tennis club. Realization of the specifications, the briefing note, a quote and finally the site. Project in progress..."
+			},
+			"cowaf" : {
+				"title" : "Animal Carpooling Project",
+				"description" : "Creation of a fictional animal carpooling startup and development of a polymorphic PWA application."
+			},
+			"cyclo" : {
+				"title" : "Cycling Tourism Web Application",
+				"description" : "Development of a web application to manage members and licenses so that this management is more efficient and easy to use for club board members."
+			},
+			"phobie" : {
+				"title" : "Anti-Phobia Extension Project",
+				"description" : "Development of a web extension to hide images and videos corresponding to the user's phobia on a website. Creation of an image analysis system of the DOM with AI in python."
+			}
+		}
+	}
+}

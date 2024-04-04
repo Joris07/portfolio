@@ -1,0 +1,51 @@
+{
+	"header": {
+		"moi": "Joris Gourdon",
+		"poste" : "Développeur full-stack pour Edissio",
+		"devise" : "Construire des solutions web innovantes, du front-end au back-end, pour façonner l'avenir numérique avec passion et expertise.",
+		"propos": {
+			"partie1" : "Ma passion pour la programmation a débuté au lycée, où j'ai découvert cette discipline créative et logique. Depuis, j'ai poursuivi mes études avec un DUT GEII, une licence professionnelle spécialisée en développement web, et enfin un MBA développeur full-stack. Cette formation approfondie m'a permis d'acquérir une expertise complète dans ce domaine, tout en développant des compétences solides en gestion de projets.",
+			"partie2" : "J'ai acquis une solide expertise dans les technologies telles que PHP, JavaScript, et je suis constamment en quête de nouvelles connaissances pour rester à jour dans un domaine en constante évolution. Je suis un fervent défenseur de l'approche centrée sur l'utilisateur, cherchant à comprendre les besoins et les désirs de chaque utilisateur pour créer des expériences numériques personnalisées.",
+			"partie3" : "Quand je n'ai pas la tête dans la programmation, j'ai l'habitude de faire du tennis, de passer du temps avec mes amis, ou de regarder des films."
+		},
+		"menu": {
+			"about": "À propos",
+			"experience": "Expérience",
+			"projets": "Projets"
+		}
+	},
+	"main" : {
+		"cv" : "Voir mon CV",
+		"repo" : "Voir tous mes projets",
+		"experiences" : {
+			"edissio" : {
+				"date" : "2022 à aujourd'hui",
+				"title" : "Alternant développeur web - Edissio",
+				"description" : "Création et mise à jour des outils webs interne à l'entreprise."
+			},
+			"lgc" : {
+				"date" : "Mars à Juin 2021",
+				"title" : "Stage développeur C# - LGC",
+				"description" : "Développement d'un programme d'écoute en temps réel pour modules ADAM-6051, liés aux automates de production, pour récupérer les données associées. Ensuite développement d'un logiciel lourd ayant pour but l'affichage et l'analyse des données récupérées."
+			}
+		},
+		"projets" : {
+			"tcbc" : {
+				"title" : "Site web du TCBC",
+				"description" : "Création du site vitrine du club de tennis TCBC. Réalisation du cahier des charges, de la note de cadrage, un devis et enfin le site. Projet en cours..."
+			},
+			"cowaf" : {
+				"title" : "Projet de covoiturage animalier",
+				"description" : "Création d'une startup fictive de covoiturage animalier et développement d'une application polymorphe PWA."
+			},
+			"cyclo" : {
+				"title" : "Application web cyclotourisme",
+				"description" : "Développement d'une application web permettant de gérer les adhérents et les licences afin que cette gestion soit plus efficace et facile d'utilisation pour les membres du bureau du club."
+			},
+			"phobie" : {
+				"title" : "Projet extension anti-phobique",
+				"description" : "Développement d'une extension web permettant de cacher les images et vidéos correspondant à la phobie de l'utilisateur sur un site web. Création d'un système d'analyse des images du DOM avec IA en python."
+			}
+		}
+	}
+}
