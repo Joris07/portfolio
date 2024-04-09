@@ -57,6 +57,7 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
+		overflow-x: hidden;
 	}
 
 	#trad-switch {
