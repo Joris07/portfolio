@@ -11,7 +11,7 @@
 	<div id="projets" class="observer">
 		<Card
             link=""
-            dateOrImage="/icons/tennis.png"
+            dateOrImage="/portfolio/icons/tennis.png"
             :isImage="true"
             :title="$t('main.projets.tcbc.title')"
             :description="$t('main.projets.tcbc.description')"
@@ -19,7 +19,7 @@
         />
         <Card
             link="https://github.com/Joris07/cowaf"
-            dateOrImage="/icons/cowaf.png"
+            dateOrImage="/portfolio/icons/cowaf.png"
             :isImage="true"
             :title="$t('main.projets.cowaf.title')"
             :description="$t('main.projets.cowaf.description')"
@@ -27,7 +27,7 @@
         />
         <Card
             link="https://github.com/poupardm/extension-anti-phobie"
-            dateOrImage="/icons/phobie.png"
+            dateOrImage="/portfolio/icons/phobie.png"
             :isImage="true"
             :title="$t('main.projets.phobie.title')"
             :description="$t('main.projets.phobie.description')"
