@@ -2,11 +2,11 @@
 	"header": {
 		"moi": "Joris Gourdon",
 		"poste" : "Développeur full-stack pour Edissio",
-		"devise" : "Construire des solutions web innovantes, du front-end au back-end, pour façonner l'avenir numérique avec passion et expertise.",
+		"devise" : "Construire des solutions web innovantes, du front-end au back-end, avec passion.",
 		"propos": {
-			"partie1" : "Ma passion pour la programmation a débuté au lycée, où j'ai découvert cette discipline créative et logique. Depuis, j'ai poursuivi mes études avec un DUT GEII, une licence professionnelle spécialisée en développement web, et enfin un MBA développeur full-stack. Cette formation approfondie m'a permis d'acquérir une expertise complète dans ce domaine, tout en développant des compétences solides en gestion de projets.",
-			"partie2" : "J'ai acquis une solide expertise dans les technologies telles que PHP, JavaScript, et je suis constamment en quête de nouvelles connaissances pour rester à jour dans un domaine en constante évolution. Je suis un fervent défenseur de l'approche centrée sur l'utilisateur, cherchant à comprendre les besoins et les désirs de chaque utilisateur pour créer des expériences numériques personnalisées.",
-			"partie3" : "Quand je n'ai pas la tête dans la programmation, j'ai l'habitude de faire du tennis, de passer du temps avec mes amis, ou de regarder des films."
+			"partie1" : "Actuellement étudiant en MBA développeur full-stack, et travaillant en alternance chez Edissio, j'ai toujours été passionné par le développement informatique depuis mes années de lycée. C'est cette passion qui m'a poussé à me spécialiser dans ce domaine à la fois créatif et logique. Tout au long de mes études et de mes expériences professionnelles, j'ai eu l'opportunité de développer mes compétences tant du côté du développement, en front-end et back-end, que du côté management de projet.",
+			"partie2" : "En plus de mon expertise actuelle, je suis constamment à la recherche de nouvelles connaissances pour rester à jour dans notre domaine en constante évolution.",
+			"partie3" : "Quand je ne suis pas plongé dans la programmation, vous me trouverez sur le court de tennis, en train de profiter avec mes amis, ou tout simplement de me détendre devant un bon film ou jeu-vidéo."
 		},
 		"menu": {
 			"about": "À propos",

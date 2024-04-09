@@ -71,7 +71,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 200px;
+        gap: 20%;
         position: fixed;
     }
 
