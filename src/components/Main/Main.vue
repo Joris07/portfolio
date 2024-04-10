@@ -66,6 +66,7 @@
 		align-self: flex-end;
 		gap: 100px;
 		margin-top: 10px;
+		margin-right: 15px;
 	}
 
 	#trad {
