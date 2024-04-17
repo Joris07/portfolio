@@ -43,7 +43,7 @@
 		</div>
 		<h2 class="show_after">{{ $t('header.menu.experience') }}</h2>
 		<Experience />
-		<Link :text="$t('main.cv')" link="" />
+		<Link :text="$t('main.cv')" link="/portfolio/icons/CV_GourdonJoris.pdf" />
 		<h2 class="show_after">{{ $t('header.menu.projets') }}</h2>
 		<Projets />
 		<Link :text="$t('main.repo')" link="https://github.com/Joris07?tab=repositories" />

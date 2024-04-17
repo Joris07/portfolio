@@ -1,5 +1,5 @@
 <template>
-	<a :href="link" class="card to_slide" target="_blank">
+	<a :href="link" @click.prevent="handleClick" class="card to_slide">
 		<div v-if="isImage" class="left-card-img">
 			<img class="left_card" :src="dateOrImage" alt="Date ou Image">
 		</div>
@@ -42,6 +42,12 @@
 			technologies: {
 				type: Array,
 				required: true
+			}
+		},
+		methods: {
+			handleClick() {
+				if (!this.link) return;
+				window.open(this.link, '_blank');
 			}
 		}
 	};

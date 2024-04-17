@@ -14,7 +14,7 @@ export default {
         },
         link: {
             type: String,
-            default: "" // Lien par défaut (vide)
+            default: ""
         }
     }
 };
