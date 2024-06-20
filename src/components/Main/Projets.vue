@@ -10,7 +10,7 @@
 <template>
 	<div id="projets" class="observer">
 		<Card
-            link=""
+            link="https://tcbotzchaudron.go.yj.fr/"
             dateOrImage="/portfolio/icons/tennis.png"
             :isImage="true"
             :title="$t('main.projets.tcbc.title')"
