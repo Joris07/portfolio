@@ -9,6 +9,14 @@
 
 <template>
 	<div id="projets" class="observer">
+        <Card
+            link="https://github.com/Joris07/apiTennis.git"
+            dateOrImage="/portfolio/icons/apiSpring.png"
+            :isImage="true"
+            :title="$t('main.projets.springApi.title')"
+            :description="$t('main.projets.springApi.description')"
+            :technologies="['Spring', 'Java', 'Jenkins', 'SonarQube', 'CleanCode', 'Docker']"
+        />
 		<Card
             link="https://tcbotzchaudron.go.yj.fr/"
             dateOrImage="/portfolio/icons/tennis.png"

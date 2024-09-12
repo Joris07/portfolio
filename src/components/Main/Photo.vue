@@ -2,9 +2,7 @@
     <div id="avatar" class="observer" ref="avatar">
       <img src="/icons/avatar.svg" alt="Joris">
     </div>
-  </template>
-  
-  
+</template>
   
 <style scoped>
     #avatar {

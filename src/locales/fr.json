@@ -1,10 +1,10 @@
 {
 	"header": {
 		"moi": "Joris Gourdon",
-		"poste" : "Développeur full-stack pour Edissio",
+		"poste" : "Développeur full-stack",
 		"devise" : "Construire des solutions web innovantes, du front-end au back-end, avec passion.",
 		"propos": {
-			"partie1" : "Actuellement étudiant en MBA développeur full-stack, et travaillant en alternance chez Edissio, j'ai toujours été passionné par le développement informatique depuis mes années de lycée. C'est cette passion qui m'a poussé à me spécialiser dans ce domaine à la fois créatif et logique. Tout au long de mes études et de mes expériences professionnelles, j'ai eu l'opportunité de développer mes compétences tant du côté du développement, en front-end et back-end, que du côté management de projet.",
+			"partie1" : "Diplômé d'un MBA en développement full-stack et fort d'une expérience en alternance chez Edissio, je suis à la recherche de nouvelles aventures professionnelles. Passionné par le développement informatique depuis mes années de lycée, c'est cet intérêt qui m'a conduit à me spécialiser dans ce domaine à la fois créatif et logique. Au fil de mes études et de mes expériences, j'ai eu l'opportunité de renforcer mes compétences aussi bien en front-end qu'en back-end, tout en développant une expertise en management de projet.",
 			"partie2" : "En plus de mon expertise actuelle, je suis constamment à la recherche de nouvelles connaissances pour rester à jour dans notre domaine en constante évolution.",
 			"partie3" : "Quand je ne suis pas plongé dans la programmation, vous me trouverez sur le court de tennis, en train de profiter avec mes amis, ou tout simplement de me détendre devant un bon film ou jeu-vidéo."
 		},
@@ -30,6 +30,10 @@
 			}
 		},
 		"projets" : {
+			"springApi" : {
+				"title" : "API tennistique",
+				"description" : "Développement d'une API REST permettant de gérer les données liées au tennis, comme les joueurs, tournois, championnats et clubs. Elle offre des fonctionnalités CRUD pour faciliter la gestion et l'intégration de ces informations dans des applications."
+			},
 			"tcbc" : {
 				"title" : "Site web du TCBC",
 				"description" : "Création du site vitrine du club de tennis TCBC. Réalisation du cahier des charges, de la note de cadrage, un devis et enfin le site. Projet en cours..."

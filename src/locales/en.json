@@ -4,7 +4,7 @@
 		"poste" : "Full-Stack Developer at Edissio",
 		"devise" : "Building innovative web solutions, from front-end to back-end, with passion.",
 		"propos": {
-			"partie1" : "Currently studying for an MBA in Full-Stack Development, and working part-time at Edissio, I've always been passionate about computer programming since my high school years. It's this passion that led me to specialize in this field, which is both creative and logical. Throughout my studies and professional experiences, I've had the opportunity to develop my skills in both development, in front-end and back-end, as well as project management.",
+			"partie1" : "Graduated with an MBA in full-stack development and enriched by my experience as an apprentice at Edissio, I am now seeking new professional challenges. My passion for software development, which began during my high school years, led me to specialize in this field that blends creativity and logic. Throughout my studies and professional experiences, I have had the opportunity to enhance my skills in both front-end and back-end development, while also gaining expertise in project management.",
 			"partie2" : "In addition to my current expertise, I'm constantly seeking new knowledge to stay up-to-date in our ever-evolving field.",
 			"partie3" : "When I'm not immersed in programming, you'll find me on the tennis court, enjoying time with my friends, or simply relaxing in front of a good film or video game."
 		},
@@ -30,9 +30,13 @@
 			}
 		},
 		"projets" : {
+			"springApi" : {
+				"title" : "Tennis Data API",
+				"description" : "Development of a REST API for managing tennis-related data, such as players, tournaments, championships, and clubs. It provides CRUD functionalities to facilitate the management and integration of this information into applications."
+			},
 			"tcbc" : {
 				"title" : "TCBC Website",
-				"description" : "Creation of the TCBC tennis club's showcase website. Realization of the specifications, the scoping note, a quote, and finally the site. Ongoing project..."
+				"description" : "Creation of the TCBC tennis club's showcase website. Realization of the specifications, the scoping note, a quote, and finally the site."
 			},
 			"cowaf" : {
 				"title" : "Animal Carpooling Project",
