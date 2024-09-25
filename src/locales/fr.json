@@ -18,8 +18,13 @@
 		"cv" : "Voir mon CV",
 		"repo" : "Voir tous mes projets",
 		"experiences" : {
+			"innov-data" : {
+				"date" : "Septembre 2024 à aujourd'hui",
+				"title" : "Développeur full stack",
+				"description" : "Développement d'outils personnalisés pour des sociétés externes. Gestion de projet agile pour une livraison itérative. Adaptation rapide aux évolutions et optimisation continue des solutions."
+			},
 			"edissio" : {
-				"date" : "2022 à aujourd'hui",
+				"date" : "Mars 2022 à Août 2024",
 				"title" : "Alternant développeur web - Edissio",
 				"description" : "Développement d'un espace client avec Symfony. Création d'un outil d'emailing en PHP. Mise à jour des sites existants et implémentation de nouvelles fonctionnalités. Gestion de projet, estimation de temps et livraison."
 			},

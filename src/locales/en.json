@@ -18,8 +18,13 @@
 		"cv" : "View my CV",
 		"repo" : "View all my projects",
 		"experiences" : {
+			"innov-data" : {
+				"date" : "September 2024 to present",
+				"title" : "Full stack Developper",
+				"description" : "Development of custom tools for external companies. Agile project management for iterative delivery. Quick adaptation to changes and continuous optimization of solutions"
+			},
 			"edissio" : {
-				"date" : "2022 to Present",
+				"date" : "March 2022 to August 2024",
 				"title" : "Web Developer Apprentice - Edissio",
 				"description" : "Development of a client area with Symfony. Creation of an emailing tool in PHP. Update existing sites and implement new features. Project management, time estimation and delivery."
 			},

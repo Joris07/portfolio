@@ -10,6 +10,15 @@
 <template>
 	<div id="experience" class="observer">
 		<Card
+			link="https://innov-data.com/"
+			:dateOrImage="$t('main.experiences.innov-data.date')"
+			:isImage="false"
+			:title="$t('main.experiences.innov-data.title')"
+			:description="$t('main.experiences.innov-data.description')"
+			:technologies="['Symfony', 'React', 'Docker', 'MySQL', 'Jira']"
+		/>
+
+		<Card
 			link="https://www.edissio.fr/"
 			:dateOrImage="$t('main.experiences.edissio.date')"
 			:isImage="false"

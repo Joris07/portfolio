@@ -15,7 +15,7 @@
             :isImage="true"
             :title="$t('main.projets.springApi.title')"
             :description="$t('main.projets.springApi.description')"
-            :technologies="['Spring', 'Java', 'Jenkins', 'SonarQube', 'CleanCode', 'Docker']"
+            :technologies="['Spring', 'Jenkins', 'SonarQube', 'Clean Architecture', 'Docker']"
         />
 		<Card
             link="https://tcbotzchaudron.go.yj.fr/"
